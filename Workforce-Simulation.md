@@ -5,7 +5,7 @@ Michael Czuba
 
 ## Introduction
 
-One the many variables businesses and agencies are challenged with is
+One of the many variables businesses and agencies are challenged with is
 balancing short term situations with longer term planning. With Human
 Resource departments frequently subject to fiscal constraints, this
 project showcases how leaders can utilize Monte Carlo Simulations of
