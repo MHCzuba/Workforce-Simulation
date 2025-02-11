@@ -88,8 +88,8 @@ simulated_annual_hires <- round(12*simulated_staff_available * simulated_product
     ## Call `lifecycle::last_lifecycle_warnings()` to see where this warning was
     ## generated.
 
-![](Workforce-Simulation_files/figure-gfm/simulation_plot-1.png)<!-- -->
-\## Logistic Adjustment to Annual Hiring Production
+![](README_figs/README-simulation_plot-1.png)<!-- --> \## Logistic
+Adjustment to Annual Hiring Production
 
 Hiring production is also not also a linear trend. As staff become less
 available or the workforce size reduces, existing staffers will likely
@@ -114,7 +114,7 @@ adjustment <- 1/(1+exp(-alpha * (simulated_staff_availability - threshold)))
 simulated_df$adjusted_hires <- round(adjustment * total_staff * simulated_productivity * 12 ,0)
 ```
 
-![](Workforce-Simulation_files/figure-gfm/adjusted_plots-1.png)<!-- -->
+![](README_figs/README-adjusted_plots-1.png)<!-- -->
 
 ## Simulating Multiple Headcount Scenarios
 
@@ -153,7 +153,7 @@ ggplot(headcount_threshold_results,
   stat_summary(fun = median, aes(label = round(after_stat(y))), geom = 'text', vjust = 3)
 ```
 
-![](Workforce-Simulation_files/figure-gfm/sim_multiple_headcounts-1.png)<!-- -->
+![](README_figs/README-sim_multiple_headcounts-1.png)<!-- -->
 
 ## GLS Model for Optimzation
 
